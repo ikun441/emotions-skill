@@ -80,4 +80,4 @@ python3 -m pytest tests/ -v
 - M1 算法核心实现（scripts/） ✅ 46 测试通过
 - M2 SKILL.md 工作流完善 + references ✅
 - M3 示例与可复现轨迹 ✅
-- M4 打包上传华为云 Skills Marketplace
+- M4 打包上传华为云 Skills Marketplace ✅

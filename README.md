@@ -242,7 +242,7 @@ valence 逐步回升，体现**情绪记忆**与**人格调制**（高神经质�
 - [x] **M1** 算法核心实现（46 测试通过）
 - [x] **M2** SKILL.md 工作流 + references
 - [x] **M3** 示例与可复现轨迹
-- [ ] **M4** 打包上传华为云 Skills Marketplace
+- [x] **M4** 打包上传华为云 Skills Marketplace ✅
 
 ---
 
