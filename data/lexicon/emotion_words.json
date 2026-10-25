@@ -1,0 +1,35 @@
+{
+  "joy": {
+    "weight": 1.0,
+    "words": ["开心", "快乐", "高兴", "兴奋", "愉快", "幸福", "满足", "喜欢", "棒", "好棒", "太好了", "哈哈", "嘿嘿", "笑", "谢谢", "感谢", "感激", "温暖", "暖心", "好多了", "好了一些", "放心", "不错", "挺好", "好的", "棒极了", "感动", "幸运", "希望", "期待", "满意", "乐意", "愿意", "赞", "点赞", "舒服", "轻松", "安心", "happy", "joy", "glad", "delighted", "great", "awesome", "wonderful", "love it", "thanks", "thank you", "grateful", "warm", "relieved", "hopeful", "excited", "nice", "cool", "pleased"]
+  },
+  "sadness": {
+    "weight": 1.0,
+    "words": ["难过", "伤心", "悲伤", "失落", "沮丧", "郁闷", "心痛", "哭", "泪", "遗憾", "孤独", "绝望", "失望", "无助", "痛苦", "难熬", "心碎", "低落", "泪目", "哭了", "心塞", "凄凉", "失去", "想念", "思念", "不舍", "sad", "sadness", "unhappy", "depressed", "sorrow", "grief", "cry", "lonely", "hopeless", "heartbroken", "disappointed", "miss"]
+  },
+  "anger": {
+    "weight": 1.0,
+    "words": ["生气", "愤怒", "恼火", "气死", "烦死", "可恶", "讨厌死", "受够了", "怒", "气愤", "抓狂", "不满", "抱怨", "烦躁", "怨恨", "气人", "烦人", "坑", "坑爹", "angry", "mad", "furious", "irritated", "annoyed", "pissed", "frustrated", "upset"]
+  },
+  "fear": {
+    "weight": 1.0,
+    "words": ["害怕", "担心", "恐惧", "焦虑", "紧张", "不安", "慌", "吓", "畏惧", "忐忑", "压力", "不确定", "担忧", "怕", "没底", "心慌", "afraid", "fear", "anxious", "worried", "nervous", "scared", "panic", "stressful", "uncertain"]
+  },
+  "surprise": {
+    "weight": 0.8,
+    "words": ["惊讶", "震惊", "没想到", "意外", "吃惊", "天哪", "哇", "竟然", "居然", "原来", "惊喜", "惊呆", "wow", "surprised", "shocked", "unexpected", "amazing", "incredible", "really"]
+  },
+  "disgust": {
+    "weight": 0.8,
+    "words": ["恶心", "反感", "厌恶", "嫌弃", "膈应", "倒胃口", "讨厌", "无聊", "烦透了", "腻", "无趣", "disgusting", "gross", "revolting", "nasty", "repulsive", "bored", "sick of"]
+  },
+  "intensifiers": {
+    "非常": 1.3, "极其": 1.6, "特别": 1.2, "超级": 1.5, "十分": 1.3, "相当": 1.2, "真的": 1.2, "好": 1.2,
+    "有点": 0.7, "稍微": 0.6, "略": 0.6, "有些": 0.7, "一点": 0.7,
+    "really": 1.3, "very": 1.3, "extremely": 1.6, "so": 1.2, "super": 1.5, "kind of": 0.7, "a bit": 0.7
+  },
+  "negations": ["不", "没", "别", "无", "未", "勿", "莫", "not", "no", "never", "without", "isn't", "don't", "doesn't"],
+  "valence_map": {
+    "joy": 1.0, "surprise": 0.2, "sadness": -1.0, "anger": -0.8, "fear": -0.7, "disgust": -0.8
+  }
+}

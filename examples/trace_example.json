@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "p_example_infj",
+  "alias": "example-infj",
+  "description": "示例轨迹：INFJ / 大五偏内向高宜人 / 九型4w5，经历3轮情绪变化",
+  "models": {
+    "big_five": { "openness": 0.80, "conscientiousness": 0.65, "extraversion": 0.30, "agreeableness": 0.85, "neuroticism": 0.45, "enabled": true, "weight": 1.0 },
+    "enneagram": { "type": 4, "wing": 5, "health_level": 0.70, "enabled": true, "weight": 1.0 },
+    "mbti": { "type": "INFJ", "dimensions": { "E_I": -0.40, "S_N": 0.65, "T_F": 0.55, "J_P": -0.30 }, "enabled": true, "weight": 0.8 }
+  },
+  "primary_model": "big_five",
+  "final_emotion_state": {
+    "pad": { "pleasure": 0.18, "arousal": 0.42, "dominance": 0.48 },
+    "discrete": { "joy": 0.30, "sadness": 0.22, "anger": 0.08, "fear": 0.15, "surprise": 0.18, "disgust": 0.07 },
+    "valence": 0.18,
+    "intensity": 0.42
+  },
+  "history": [
+    {
+      "turn_id": 1,
+      "timestamp": "2026-10-25T15:31:00+08:00",
+      "user_input_summary": "用户倾诉失去陪伴多年的宠物，非常难过",
+      "signal": { "valence": -0.70, "arousal": 0.55, "dominant_emotion": "sadness", "intensity": 0.72, "triggers": ["难过", "失去"] },
+      "emotion_delta": { "pad": { "pleasure": -0.15, "arousal": 0.10, "dominance": -0.06 }, "discrete": { "sadness": 0.18 } },
+      "modulate_coeff": { "sensitivity": 0.95, "pos_gain": 0.65, "neg_gain": 0.95 },
+      "reason": "用户表达悲伤(难过/失去)；敏感性=0.95(高神经质N=0.45)；负向增益=0.95放大；主导维度:neuroticism；INFJ的F维度增强共情",
+      "style_directive": { "tone": "关切", "warmth": 0.82, "empathy": 0.88, "verbosity": "适中", "emoji_tendency": 0.20 }
+    },
+    {
+      "turn_id": 2,
+      "timestamp": "2026-10-25T15:33:00+08:00",
+      "user_input_summary": "用户感谢倾听，感觉好了一些",
+      "signal": { "valence": 0.40, "arousal": 0.30, "dominant_emotion": "joy", "intensity": 0.40, "triggers": ["感谢", "好了一些"] },
+      "emotion_delta": { "pad": { "pleasure": 0.08, "arousal": -0.04, "dominance": 0.05 }, "discrete": { "joy": 0.12, "sadness": -0.10 } },
+      "modulate_coeff": { "sensitivity": 0.95, "pos_gain": 0.65, "neg_gain": 0.95 },
+      "reason": "用户表达感激与缓和(感谢/好了一些)；正向增益=0.65；情绪由悲转喜；衰减使上轮悲伤部分回归基线",
+      "style_directive": { "tone": "温暖", "warmth": 0.80, "empathy": 0.60, "verbosity": "适中", "emoji_tendency": 0.30 }
+    },
+    {
+      "turn_id": 3,
+      "timestamp": "2026-10-25T15:36:00+08:00",
+      "user_input_summary": "用户对明天的新工作机会感到既期待又紧张",
+      "signal": { "valence": 0.30, "arousal": 0.65, "dominant_emotion": "surprise", "intensity": 0.60, "triggers": ["期待", "紧张", "新"] },
+      "emotion_delta": { "pad": { "pleasure": 0.07, "arousal": 0.12, "dominance": 0.03 }, "discrete": { "surprise": 0.15, "joy": 0.06, "fear": 0.05 } },
+      "modulate_coeff": { "sensitivity": 0.95, "pos_gain": 0.65, "neg_gain": 0.95 },
+      "reason": "用户表达期待+紧张(期待/紧张/新)；唤醒显著上升；混合情绪(喜+惧)；INFJ的N直觉维度对'新机会'敏感",
+      "style_directive": { "tone": "鼓励", "warmth": 0.75, "empathy": 0.65, "verbosity": "详尽", "emoji_tendency": 0.35 }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# CodeArts
+.codeartsdoer/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Runtime data
+data/profiles/
+*.tmp
+*.json.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
