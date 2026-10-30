@@ -255,3 +255,6 @@ MIT License
 ## 🏆 赛事
 
 华为云开发者大赛（[competition/1300000350](https://developer.huaweicloud.com/competition/information/1300000350/introduction)）
+
+## 社群
+<img width="1284" height="2283" alt="微信图片_20261030190348_75_72" src="https://github.com/user-attachments/assets/c259ca7b-29af-40d1-8844-beb41e7d5843" />
